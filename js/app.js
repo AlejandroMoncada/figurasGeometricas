@@ -69,15 +69,15 @@ function calcularPerimetroTriangulo(){
     const value = lado.value;
 
     const perimetro = perimetroTriangulo(value);
-    resultTriangulo.innerText = "El Perímetro del tríangulo es: "+perimetro;
+    v.innerText = "El Perímetro del tríangulo es: "+perimetro;
 }
 
 function calcularAreaTriangulo(){
-    const base = document.getElementById("InputTrianguloBase");
-    const altura = document.getElementById("InputTrianguloAltura");
-    const value1 = altura.value1;
-    const value = base.value;
+    let base = document.getElementById("InputTrianguloBase");
+    let altura = document.getElementById("InputTrianguloAltura");
+    let value = base.value;
+    let values = altura.values;
 
-    const area = areaTriangulo(value,value1);
-    resultTriangulo.innerText = "El Área del tríangulo es: "+area;
+    let area = areaTriangulo(value,values);
+    v.innerText = "El Área del tríangulo es: "+area;
 }

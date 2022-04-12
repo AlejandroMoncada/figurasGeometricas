@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Curso practico de JavaScript</title>
+</head>
+<body>
+    <header>
+        <img src="images/perfil.jpg">
+        <h1>Figuras Geometricas</h1>
+    </header>
+    <section>
+        <!-- Formulario del cuadrado -->
+        <form class="form">
+            <h1>Cuadrado</h1>
+            <label for="InputCuadrado">Escribe el lado del cuadro </label>
+            <input id="InputCuadrado" type="number">
+
+            <button type="button" onclick="calcularPerimetroCuadrado()">Calcular el área </button> <!-- oneclick = Sirve para llamar una function del Js por cada click -->
+            <button type="button" onclick="calcularAreaCuadrado()"> Calcular el perimetro </button>
+            <h3 id="resultCuadrado"></h3>
+        </form>
+    </section>
+    <script src="js/app.js"></script>
+</body>
+</html>
